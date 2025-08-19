@@ -1,4 +1,4 @@
-{% set version = '0.2.2' %}
+{% set version = "0.2.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/legendry_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/legendry/legendry_{{ version }}.tar.gz
-  sha256: 5d0d3d5007d6b1f36001b88f93cd3b369403d1ba39716100266f2c27f4c68e55
+  sha256: 844430f9bff32fa17f7b14571405dbc54bc6f7d220dec38e67053fbb521e5704
 
 build:
   number: 0
@@ -53,9 +53,7 @@ test:
 about:
   home: https://teunbrand.github.io/legendry/, https://github.com/teunbrand/legendry
   license: MIT
-  summary: A 'ggplot2' extension that focusses on expanding the plotter's arsenal of guides.
-    Guides in 'ggplot2' include axes and legends. 'legendry' offers new axes and annotation
-    options, as well as new legends and colour displays.
+  summary: A 'ggplot2' extension that focusses on expanding the plotter's arsenal of guides. Guides in 'ggplot2' include axes and legends. 'legendry' offers new axes and annotation options, as well as new legends and colour displays.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
