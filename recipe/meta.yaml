@@ -1,4 +1,4 @@
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/legendry_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/legendry/legendry_{{ version }}.tar.gz
-  sha256: 844430f9bff32fa17f7b14571405dbc54bc6f7d220dec38e67053fbb521e5704
+  sha256: 2ed280a3eaef8f85ae30e593b2987dba636e711b52bec6eb2956c130360050b7
 
 build:
   number: 0
